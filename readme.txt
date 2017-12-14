@@ -57,7 +57,7 @@ rgbd_benchmark_tools的使用方法：
 2、Evaluation-----Absolute Trajectory Error (ATE) 绝对误差：更适合Visual SLAM
 
 	使用方法：
-	./evaluate_ate.py --plot PLOT --verbose ../../data/groundtruth/rgbd_dataset_freiburg1_360-groundtruth.txt ../../data/rgbdslam/freiburg1_360-rgbdslam.txt 
+	python evaluate_ate.py --save_associations SAVE_ASSOCIATIONS --plot PLOT --verbose groundtruth.txt CameraTrajectory.txt
 	
 	解释：
 	evaluate_ate.py [-h] [--offset OFFSET] [--scale SCALE]
@@ -142,6 +142,10 @@ rgbd_benchmark_tools的使用方法：
 	  --verbose             print all evaluation data (otherwise, only the mean
 		                translational error measured in meters will be
 		                printed)
+				
+				
+				
+				
 
 
 
